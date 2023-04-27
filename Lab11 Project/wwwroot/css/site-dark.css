@@ -1,0 +1,75 @@
+﻿/* Navbar styles */
+.navbar-dark .navbar-brand {
+    color: #fff;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+}
+
+    .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link:hover {
+        color: #fff;
+    }
+
+.navbar-dark .navbar-toggler {
+    border-color: #fff;
+}
+
+.navbar-dark .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(255, 255, 255, 0.9)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* General styles */
+body {
+    background-color: #222;
+    color: #fff;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.border-top, .border-bottom {
+    border-color: #444;
+}
+
+.box-shadow {
+    box-shadow: 0 .25rem .75rem rgba(255, 255, 255, .1);
+}
+
+.footer {
+    background-color: #444;
+    color: #fff;
+}
+
+/* Additional styles for specific elements */
+/* Add your custom styles here */
+
+/* Change navbar color */
+.navbar-dark {
+    background-color: #6c757d;
+}
+
+    /* Make it more cool */
+    .navbar-dark .navbar-brand {
+        font-size: 2rem;
+    }
+
+    .navbar-dark .navbar-nav .nav-link {
+        font-size: 1.2rem;
+        padding: 0.5rem 1.2rem;
+    }
+
+        .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link:hover {
+            background-color: #343a40;
+        }
+
+.btn-primary {
+    background-color: #00bfff;
+    border-color: #00bfff;
+}
+
+.footer {
+    background-color: #343a40;
+}

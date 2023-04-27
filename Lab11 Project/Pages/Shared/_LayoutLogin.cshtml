@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+          crossorigin="anonymous">
+    <style>
+        body {
+            background-color: #1d1d1d;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .form-label {
+            font-weight: bold;
+            color: #fff;
+        }
+
+        .form-control {
+            background-color: #3d3d3d;
+            color: #fff;
+            border: none;
+            border-radius: 0;
+        }
+
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+            border-radius: 0;
+        }
+
+            .btn-primary:hover {
+                background-color: #0069d9;
+                border-color: #0062cc;
+            }
+    </style>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    @RenderSection("styles", required: false)
+</head>
+<body>
+    <div class="container">
+        @RenderBody()
+    </div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+﻿@page
+@using Lab11_Project.Models
+@model Lab11_Project.Pages.Admin_Pages.MainModel
+@{
+    Layout = "_LayoutAdmin";
+    ViewData["Title"] = "Main";
+}
+<h2> Number Of Users : @Model.GetTotalNumUsers </h2>
+
+
+
+<table class="table table-striped table-dark">
+    <thead>
+        <tr>
+            <th >ID</th>
+            <th >Name</th>
+            <th >Email</th>
+            <th >Username</th>
+            <th >Password</th>
+            <th >User Type</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var user in Model.allusers)
+        {
+            <tr>
+                <td align="justify">@user.Id</td>
+                <td align="justify">@user.Name</td>
+                <td align="justify">@user.Email</td>
+                <td align="justify">@user.UserName</td>
+                <td align="justify" >*****</td>
+                <td align="justify">@(user.UserType == 1 ? "ADMIN" : "USER")</td>
+            </tr>
+        }
+    </tbody>
+</table>
